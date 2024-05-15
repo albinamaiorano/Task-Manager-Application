@@ -1,12 +1,12 @@
+import unittest
+from unittest.mock import patch
+from io import StringIO
 import sys
 import os
 
 # Add the parent directory to the Python path
-sys.path.append(os.path.abspath("/Users/alba/Desktop/Task Manager Application/"))  # Add the parent directory to the Python path
-# Now, you can import modules from the parent directory
-import unittest
-from unittest.mock import patch
-from io import StringIO
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from business_logic import TaskService
 from models import Task
 from data_access import TaskRepository

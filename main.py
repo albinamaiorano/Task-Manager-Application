@@ -1,4 +1,8 @@
-from user_interface import start_application
+from user_interface import UserInterface 
 
 if __name__ == "__main__":
-    start_application()
+    # Create an instance of UserInterface
+    ui = UserInterface()
+    
+    # Call the start_application method to start the task manager application
+    ui.start_application()
